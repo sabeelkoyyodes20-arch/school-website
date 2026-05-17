@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers' Portal - Kerala Aided Upper Primary School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manjari:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+
+       
+</head>
+<body>
+
+    <!-- Utility Language Bar -->
+    <div class="utility-bar">
+        <div><span>School Code: 13380 | Sub-District: Kannur North</span></div>
+        <button class="lang-switch-btn" onclick="toggleLanguage()">മലയാളം / English</button>
+    </div>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-area">
+                <img src="assets/logo.png" alt="School Logo" class="school-logo-img">
+                <div class="school-name">
+                    <h1 class="en-txt">Aided Upper Primary School</h1>
+                    <h1 class="ml-txt">എയ്ഡഡ് അപ്പർ പ്രൈമറി സ്കൂൾ</h1>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="en-txt">Home</a><a href="index.html" class="ml-txt">ഹോം</a></li>
+                    <li><a href="about.html" class="en-txt">About Us</a><a href="about.html" class="ml-txt">ഞങ്ങളെക്കുറിച്ച്</a></li>
+                    <li><a href="academics.html" class="en-txt">Academics</a><a href="academics.html" class="ml-txt">പഠനം</a></li>
+                    <li><a href="resources.html" class="en-txt">Resources</a><a href="resources.html" class="ml-txt">വിഭവങ്ങൾ</a></li>
+                    <li><a href="teachers.html" class="en-txt">Teachers' Desk</a><a href="teachers.html" class="ml-txt">അദ്ധ്യാപകർക്ക്</a></li>
+                    <li><a href="infrastructure.html" class="en-txt">Facilities</a><a href="infrastructure.html" class="ml-txt">സൗകര്യങ്ങൾ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Layout Framework -->
+    <main class="main-container">
+        <h2 class="page-title en-txt">Teachers' Resource Portal</h2>
+        <h2 class="page-title ml-txt">അദ്ധ്യാപകരുടെ പോർട്ടൽ</h2>
+        <p class="page-subtitle en-txt">Access operational materials, structural evaluation guidelines, handbooks, and planning modules.</p>
+        <p class="page-subtitle ml-txt">അദ്ധ്യാപകർക്കായുള്ള ഹാൻഡ്‌ബുക്കുകൾ, ടീച്ചിങ് മാനുവലുകൾ, മറ്റ് പഠന സാമഗ്രികൾ എന്നിവ ഇവിടെ ലഭ്യമാണ്.</p>
+
+        <div class="portal-desc-card">
+            <p class="en-txt"><strong>Welcome Teachers!</strong> This static dashboard provides rapid access to your educational preparation assets. Drop updated PDF templates into the repository directory to modify links seamlessly.</p>
+            <p class="ml-txt"><strong>അദ്ധ്യാപകരുടെ ശ്രദ്ധയ്ക്ക്:</strong> സ്കൂൾ ക്ലാസുകളിലേക്കാവശ്യമായ ഔദ്യോഗിക ഹാൻഡ്‌ബുക്കുകളും പ്ലാനിങ് ഫോർമാറ്റുകളും താഴെ നൽകിയിരിക്കുന്ന സെക്ഷനുകളിൽ നിന്നും ഡൗൺലോഡ് ചെയ്യാം.</p>
+        </div>
+
+        <!-- SECTION 1: SCERT Teacher Texts (Handbooks) -->
+        <h3 class="resource-section-title">
+            <span>📖</span>
+            <span class="en-txt">SCERT Teacher Texts (Handbooks)</span>
+            <span class="ml-txt">അദ്ധ്യാപക സഹായി (Handbooks)</span>
+        </h3>
+        
+        <div class="teacher-grid">
+            <div class="teacher-resource-card">
+                <div class="resource-meta">
+                    <span class="resource-type-badge badge-handbook">LP Section</span>
+                    <h4 class="resource-card-name"><span class="en-txt">Standard 1 to 4 Handbooks</span><span class="ml-txt">എൽ.പി അദ്ധ്യാപക സഹായി</span></h4>
+                    <p class="resource-card-sub">All Subjects (Malayalam & English Medium)</p>
+                </div>
+                <a href="assets/teachers/lp-handbooks.zip" class="teacher-download-btn" download>📥 Download Pack</a>
+            </div>
+            <div class="teacher-resource-card">
+                <div class="resource-meta">
+                    <span class="resource-type-badge badge-handbook">UP Section</span>
+                    <h4 class="resource-card-name"><span class="en-txt">Standard 5 to 7 Handbooks</span><span class="ml-txt">യു.പി അദ്ധ്യാപക സഹായി</span></h4>
+                    <p class="resource-card-sub">Core Subjects & Languages Matrix</p>
+                </div>
+                <a href="assets/teachers/up-handbooks.zip" class="teacher-download-btn" download>📥 Download Pack</a>
+            </div>
+        </div>
+
+        <!-- SECTION 2: Teaching Manuals (Templates & Formats) -->
+        <h3 class="resource-section-title" style="border-bottom-color: var(--secondary-coral);">
+            <span>📝</span>
+            <span class="en-txt">Teaching Manuals (TM Format)</span>
+            <span class="ml-txt">ടീച്ചിങ് മാനുവൽ ഫോർമാറ്റുകൾ</span>
+        </h3>
+        
+        <div class="teacher-grid">
+            <div class="teacher-resource-card">
+                <div class="resource-meta">
+                    <span class="resource-type-badge badge-manual">Daily Planning</span>
+                    <h4 class="resource-card-name"><span class="en-txt">Standard TM Template</span><span class="ml-txt">സാധാരണ ടീച്ചിങ് മാനുവൽ രൂപരേഖ</span></h4>
+                    <p class="resource-card-sub">Printable PDF & Editable DOCX Format</p>
+                </div>
+                <a href="assets/teachers/teaching-manual-template.docx" class="teacher-download-btn" download>📥 Get Template (Word)</a>
+            </div>
+            <div class="teacher-resource-card">
+                <div class="resource-meta">
+                    <span class="resource-type-badge badge-manual">SRG Formats</span>
+                    <h4 class="resource-card-name"><span class="en-txt">Academic Scheme of Work</span><span class="ml-txt">പ്രതിവാര യൂണിറ്റ് പ്ലാൻ</span></h4>
+                    <p class="resource-card-sub">Aligned with latest SRG guidelines</p>
+                </div>
+                <a href="assets/teachers/scheme-of-work.pdf" class="teacher-download-btn" download>📥 Download PDF</a>
+            </div>
+        </div>
+
+        <!-- SECTION 3: Teaching Materials & TLM Downloads -->
+        <h3 class="resource-section-title">
+            <span>🎨</span>
+            <span class="en-txt">Teaching Learning Materials (TLM Support)</span>
+            <span class="ml-txt">പഠനോപകരണങ്ങളും പഠന സാമഗ്രികളും (TLM)</span>
+        </h3>
+        
+        <div class="teacher-grid">
+            <div class="teacher-resource-card">
+                <div class="resource-meta">
+                    <span class="resource-type-badge badge-tlm">Visual Aids</span>
+                    <h4 class="resource-card-name"><span class="en-txt">Classroom Flashcards & Charts</span><span class="ml-txt">ക്ലാസ്സ് റൂം ഫ്ലാഷ് കാർഡുകൾ</span></h4>
+                    <p class="resource-card-sub">Printable visual resources for lower primary classes</p>
+                </div>
+                <a href="assets/teachers/lp-flashcards.zip" class="teacher-download-btn" download>📥 Download Assets</a>
+            </div>
+            <div class="teacher-resource-card">
+                <div class="resource-meta">
+                    <span class="resource-type-badge badge-tlm">ICT Tools</span>
+                    <h4 class="resource-card-name"><span class="en-txt">Smart Class Slide Presentations</span><span class="ml-txt">സ്മാർട്ട് ക്ലാസ് പ്രെസന്റേഷനുകൾ</span></h4>
+                    <p class="resource-card-sub">UP Basic Science & Social Science slide packages</p>
+                </div>
+                <a href="assets/teachers/smart-class-slides.zip" class="teacher-download-btn" download>📥 Download Slides</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Consolidated Unified Static Footer -->
+    <footer>
+        <p>© 2026 Kerala Aided Upper Primary School. Internal Staff Registry Node.</p>
+    </footer>
+
+    <!-- Static Language Selection Local Script -->
+    <script>
+        function toggleLanguage() {
+            document.body.classList.toggle('lang-ml');
+        }
+    </script>
+</body>
+</html>

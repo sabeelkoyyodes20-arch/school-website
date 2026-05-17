@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kerala Aided Upper Primary School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manjari:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .staff-category-title {
+            color: var(--primary-purple);
+            margin: 35px 0 15px 0;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 6px;
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Utility Language Bar -->
+    <div class="utility-bar">
+        <div><span>School Code: 13380 | Sub-District: Kannur North</span></div>
+        <button class="lang-switch-btn" onclick="toggleLanguage()">മലയാളം / English</button>
+    </div>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-area">
+                <img src="assets/logo.png" alt="School Logo" class="school-logo-img">
+                <div class="school-name">
+                    <h1 class="en-txt">Thannada Central UP School</h1>
+                    <h1 class="ml-txt">തന്നട സെൻട്രൽ യു പി സ്കൂൾ</h1>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="en-txt">Home</a><a href="index.html" class="ml-txt">ഹോം</a></li>
+                    <li><a href="about.html" class="active en-txt">About Us</a><a href="about.html" class="active ml-txt">ഞങ്ങളെക്കുറിച്ച്</a></li>
+                    <li><a href="academics.html" class="en-txt">Academics</a><a href="academics.html" class="ml-txt">പഠനം</a></li>
+                    <li><a href="teachers.html" class="en-txt">Teachers' Desk</a><a href="teachers.html" class="ml-txt">അദ്ധ്യാപകർക്ക്</a></li>
+                    <li><a href="resources.html" class="en-txt">Resources</a><a href="resources.html" class="ml-txt">വിഭവങ്ങൾ</a></li>
+                    <li><a href="infrastructure.html" class="en-txt">Facilities</a><a href="infrastructure.html" class="ml-txt">സൗകര്യങ്ങൾ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Layout Framework -->
+    <main class="main-container">
+        <h2 class="page-title en-txt">Our History & Management</h2>
+        <h2 class="page-title ml-txt">ചരിത്രവും മാനേജ്‌മെന്റും</h2>
+        <p class="page-subtitle en-txt">An legacy of educational service driving local community development.</p>
+        <p class="page-subtitle ml-txt">തലമുറകൾക്ക് അറിവുപകർന്ന നമ്മുടെ വിദ്യാലയത്തിന്റെ ചരിത്രവഴി.</p>
+
+        <!-- School Background Context Block -->
+        <div class="card-block">
+            <h3 class="en-txt">Our Legacy</h3>
+            <h3 class="ml-txt">പാരമ്പര്യം</h3>
+            <p class="en-txt">Founded with a deep vision for public transformation, this aided institution has integrated standard state infrastructure values with grassroots community access for decades, producing excellent professionals and civil guardians.</p>
+            <p class="ml-txt">പ്രദേശത്തെ ജനങ്ങൾക്ക് മികച്ച വിദ്യാഭ്യാസം ലഭ്യമാക്കുക എന്ന ലക്ഷ്യത്തോടെ സ്ഥാപിതമായ ഈ വിദ്യാലയം കഴിഞ്ഞ അഞ്ച് പതിറ്റാണ്ടിലേറെയായി സാമൂഹിക പുരോഗതിയുടെ ചാലകശക്തിയായി നിലകൊള്ളുന്നു.</p>
+        </div>
+
+        <!-- PTA / SMC Advisory Pillars Block -->
+        <div class="card-block" style="border-left-color: var(--secondary-coral);">
+            <h3 class="en-txt">PTA & School Management Committee (SMC)</h3>
+            <h3 class="ml-txt">പി.ടി.എ & സ്കൂൾ മാനേജ്‌മെന്റ് കമ്മിറ്റി</h3>
+            <p class="en-txt">Our institution thrives on a strongly supportive parent-teacher ecosystem. Together with the School Management Committee, we work tirelessly to continuously update learning tools, maintain high hygiene standards, and enrich campus facilities.</p>
+            <p class="ml-txt">ശക്തമായ പി.ടി.എ (PTA), എസ്.എം.സി (SMC) കൂട്ടായ്മയിലൂടെ ഓരോ കുട്ടിക്കും മികച്ച ഭൗതിക സാഹചര്യങ്ങളും സുരക്ഷിതമായ അന്തരീക്ഷവും ഞങ്ങൾ സ്കൂളിൽ ഉറപ്പുനൽകുന്നു.</p>
+        </div>
+
+
+        <!-- ==========================================================================
+           SCHOOL STAFF DIRECTORY SECTION
+           ========================================================================== -->
+        <h2 style="color: var(--primary-purple); margin-top: 50px; text-align: center;">
+            <span class="en-txt">School Staff Directory</span>
+            <span class="ml-txt">അദ്ധ്യാപകരും ജീവനക്കാരും</span>
+        </h2>
+
+        <!-- CATEGORY 1: Leadership & Administration -->
+        <h3 class="staff-category-title">
+            <span class="en-txt">School Administration & Leadership</span>
+            <span class="ml-txt">സ്കൂൾ ഭരണനേതൃത്വം</span>
+        </h3>
+        <div class="directory-grid">
+            <div class="staff-card">
+                <div class="staff-avatar">👤</div>
+                <div class="staff-info">
+                    <h4>Siraj K C</h4>
+                    <p class="en-txt">Headmaster (UPST)</p><p class="ml-txt">പ്രധാനാദ്ധ്യാപകൻ (UPST)</p>
+                    <span>Administration</span>
+                </div>
+            </div>
+            <div class="staff-card">
+                <div class="staff-avatar">👤</div>
+                <div class="staff-info">
+                    <h4>Sameema</h4>
+                    <p class="en-txt">Assistant H M (LPST)</p><p class="ml-txt">അസിസ്റ്റന്റ് എച്ച്.എം (LPST)</p>
+                    <span>Administration</span>
+                </div>
+            </div>
+            <div class="staff-card">
+                <div class="staff-avatar">👤</div>
+                <div class="staff-info">
+                    <h4>Zubair</h4>
+                    <p class="en-txt">Staff Secretary (LPST)</p><p class="ml-txt">സ്റ്റാഫ് സെക്രട്ടറി (LPST)</p>
+                    <span>Staff Committee</span>
+                </div>
+            </div>
+            <div class="staff-card">
+                <div class="staff-avatar">👤</div>
+                <div class="staff-info">
+                    <h4>Rameesa MM</h4>
+                    <p class="en-txt">SRG Convener (LPST)</p><p class="ml-txt">എസ്.ആർ.ജി കൺവീനർ (LPST)</p>
+                    <span>Academic Council</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY 2: Upper Primary School Teachers (UPST) -->
+        <h3 class="staff-category-title">
+            <span class="en-txt">Upper Primary School Teachers (UPST)</span>
+            <span class="ml-txt">യു.പി വിഭാഗം അദ്ധ്യാപകർ</span>
+        </h3>
+        <div class="directory-grid">
+            <div class="staff-card"><div class="staff-avatar">👤</div><div class="staff-info"><h4>Reyeesa</h4><p>UPST</p><span>Class Teacher</span></div></div>
+            <div class="staff-card"><div class="staff-avatar">👤</div><div class="staff-info"><h4>Murshida</h4><p>UPST</p><span>Class Teacher</span></div></div>
+            <div class="staff-card"><div class="staff-avatar">👤</div><div class="staff-info"><h4>Raseeba</h4><p>UPST</p><span>Class Teacher</span></div></div>
+            <div class="staff-card"><div class="staff-avatar">👤</div><div class="staff-info"><h4>Saheera</h4><p>UPST</p><span>Class Teacher</span></div></div>
+            <div class="staff-card"><div class="staff-avatar">👤</div><div class="staff-info"><h4>Shubha</h4><p>UPST</p><span>Class Teacher</span></div></div>
+            <div class="staff-card"><div class="staff-avatar">👤</div><div class="staff-info"><h4>Sanida</h4><p>UPST</p><span>Class Teacher</span></div></div>
+            <div class="staff-card"><div class="staff-avatar">👤</div><div class="staff-info"><h4>Vandana</h4><p>UPST</p><span>Class Teacher</span></div></div>
+            <div class="staff-card"><div class="staff-avatar">👤</div><div class="staff-info"><h4>Rasmina</h4><p>UPST</p><span>Class Teacher</span></div></div>
+        </div>
+
+        <!-- CATEGORY 3: Lower Primary School Teachers (LPST) -->
+        <h3 class="staff-category-title">
+            <span class="en-txt">Lower Primary School Teachers (LPST)</span>
+            <span class="ml-txt">എൽ.പി വിഭാഗം അദ്ധ്യാപകർ</span>
+        </h3>
+        <div class="directory-grid">
+            <div class="staff-card"><div class="staff-avatar">👤</div><div class="staff-info"><h4>Rajula</h4><p>LPST</p><span>Class Teacher</span></div></div>
+            <div class="staff-card"><div class="staff-avatar">👤</div><div class="staff-info"><h4>Sabeel</h4><p>LPST</p><span>Class Teacher</span></div></div>
+            <div class="staff-card"><div class="staff-avatar">👤</div><div class="staff-info"><h4>Afeeda</h4><p>LPST</p><span>Class Teacher</span></div></div>
+            <div class="staff-card"><div class="staff-avatar">👤</div><div class="staff-info"><h4>Akash</h4><p>LPST</p><span>Class Teacher</span></div></div>
+            <div class="staff-card"><div class="staff-avatar">👤</div><div class="staff-info"><h4>Sherin</h4><p>LPST</p><span>Class Teacher</span></div></div>
+        </div>
+    <!-- CATEGORY 4: Non-Teaching & Support Staff -->
+        <h3 class="staff-category-title">
+            <span class="en-txt">Non-Teaching & Support Staff</span>
+            <span class="ml-txt">ഓഫീസ് ജീവനക്കാർ</span>
+        </h3>
+        <div class="directory-grid">
+            <div class="staff-card">
+                <div class="staff-avatar">👤</div>
+                <div class="staff-info">
+                    <h4>Hashim</h4>
+                    <p class="en-txt">Office Attender</p><p class="ml-txt">ഓഫീസ് അറ്റൻഡർ</p>
+                    <span>School Administration Support</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Unified Institutional Footer -->
+    <footer>
+        <p>© 2026 Kerala Aided Upper Primary School. General Education Data Node.</p>
+    </footer>
+
+    <!-- Static Language Selection Local Script -->
+    <script>
+        function toggleLanguage() {
+            document.body.classList.toggle('lang-ml');
+        }
+    </script>
+</body>
+</html>
