@@ -120,29 +120,50 @@ header {
     font-weight: 600;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
+/* Horizontal scrolling pill-style navigation menu for easy thumb swipe */
+    nav ul {
+        display: flex !important;
+        flex-direction: row !important; /* Forces items into a clean horizontal line */
+        flex-wrap: nowrap !important;   /* Prevents menu items from wrapping down */
+        overflow-x: auto !important;    /* Enables clean horizontal swipe scrolling */
+        overflow-y: hidden !important;  /* Stops ugly vertical jiggling while swiping */
+        width: 100vw !important;        /* Let it expand edge-to-edge on mobile viewports */
+        margin-left: -12px !important;  /* Perfect alignment reset to match screen margins */
+        padding: 5px 16px 15px 16px !important; /* Clean clearance space for fingers */
+        gap: 10px !important;
+        scroll-snap-type: x proximity;  /* Snaps cleanly into place when swiped */
+        -webkit-overflow-scrolling: touch !important; /* Silky smooth iOS momentum scroll */
+    }
 
-nav a {
-    text-decoration: none;
-    color: var(--muted-text);
-    font-weight: 700;
-    font-size: 0.95rem;
-    transition: all 0.2s ease;
-    padding: 5px 0;
-}
+    /* Prevent mobile phone browsers from rendering ugly horizontal scrollbars */
+    nav ul::-webkit-scrollbar {
+        display: none !important; 
+        width: 0 !important;
+        height: 0 !important;
+    }
 
-nav a:hover {
-    color: var(--primary-indigo);
-}
+    nav li {
+        flex: 0 0 auto !important; /* absolute requirement: stops links from shrinking */
+    }
 
-nav a.active {
-    color: var(--primary-indigo);
-    border-bottom: 3px solid var(--accent-mango);
-}
+    nav a {
+        display: inline-block !important;
+        background: var(--white) !important;
+        padding: 10px 18px !important; /* Balanced padding for clear touch targets */
+        border-radius: 25px !important;
+        white-space: nowrap !important; /* absolute requirement: stops words like 'Teachers Desk' from splitting onto 2 lines */
+        border: 1px solid var(--border-color) !important;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.03) !important;
+        font-size: 0.9rem !important;
+        color: var(--muted-text) !important;
+        transition: none !important; /* Prevents mobile click delays */
+    }
+
+    nav a.active {
+        background: var(--primary-indigo) !important;
+        color: var(--white) !important;
+        border-color: var(--primary-indigo) !important;
+    }
 
 /* ==========================================================================
    HERO SECTION (VIBRANT GRADIENT)
